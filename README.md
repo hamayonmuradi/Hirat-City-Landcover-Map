@@ -69,6 +69,7 @@ This project maps land cover across Hirat City for 2025 using satellite imagery 
 
 **Hamayon Muradi**
 GIS & Remote Sensing Engineer, Kabul, Afghanistan
+
 Email: hamayonmuradi8@gmail.com
-`[MIT / CC BY 4.0]`
+
 
