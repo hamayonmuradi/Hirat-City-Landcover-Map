@@ -2,7 +2,7 @@
 
 Land cover map of Hirat City, Afghanistan, produced with **Google Earth Engine (GEE)** and validated with **Google Earth** reference points.
 
-![Hirat City Landcover 2025](images/landcover_map.jpg)
+![Hirat City Landcover 2025](Hirat_lulc_2025.jpg)
 
 ## Overview
 
@@ -19,7 +19,7 @@ This project maps land cover across Hirat City for 2025 using satellite imagery 
 
 ## Results
 
-![Land cover area by class](images/area_chart.jpg)
+![Land cover area by class](landcover_chart.jpg)
 
 | Class | Area (km²) | Share of total |
 |---|---|---|
@@ -40,43 +40,26 @@ This project maps land cover across Hirat City for 2025 using satellite imagery 
 1. **Study area:** Hirat City boundary.
 2. **Data:** Landsat imagery (August 2025), cloud-masked and composited in GEE.
 3. **Training data:** Sample points collected for each of the four classes.
-4. **Classification:** `[Random Forest / CART / SVM]` classifier in GEE.
+4. **Classification:** SVM classifier in GEE.
 5. **Accuracy assessment:** Independent validation points interpreted visually in Google Earth and compared against the classified map.
-6. **Layout and mapping:** Final map produced in `[ArcGIS Pro / QGIS]`, projected in WGS 1984 UTM Zone 41N.
+6. **Layout and mapping:** Final map produced in ArcGIS Pro, projected in WGS 1984 UTM Zone 41N.
 
 ## Accuracy Assessment
 
 | Metric | Value |
 |---|---|
-| Overall Accuracy | `[xx %]` |
-| Kappa Coefficient | `[0.xx]` |
-| Number of validation points | `[n]` |
+| Overall Accuracy | `[81.91 %]` |
+| Kappa Coefficient | `[0.745]` |
+| Number of validation points | `[94]` |
 
 ## Tools & Technologies
 
-- Google Earth Engine (JavaScript / Python API)
-- Google Earth (validation)
-- `[ArcGIS Pro / QGIS]` (cartography)
+- Google Earth Engine
+- Google Earth Pro (validation)
+- ArcGIS Pro (cartography)
 - Microsoft Excel (area statistics and charts)
 
-## Repository Structure
-
 ```
-hirat-landcover-2025/
-├── README.md
-├── images/
-│   ├── landcover_map.jpg
-│   └── area_chart.jpg
-├── gee_script/        # GEE code (add your script here)
-└── data/              # validation points, statistics (optional)
-```
-
-## How to Reproduce
-
-1. Open the Google Earth Engine Code Editor.
-2. Load the script from `gee_script/` (or paste your GEE script link here).
-3. Define the Hirat boundary, then run the classification.
-4. Export the classified raster and compute area statistics.
 
 ## Limitations
 
@@ -88,9 +71,7 @@ hirat-landcover-2025/
 
 **Hamayon Muradi**
 GIS & Remote Sensing Engineer, Kabul, Afghanistan
-`[LinkedIn / email / portfolio link]`
-
-## License
+Email: hamayonmuradi8@gmail.com
 
 `[MIT / CC BY 4.0]`
 
